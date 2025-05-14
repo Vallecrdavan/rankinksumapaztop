@@ -1,0 +1,136 @@
+/* styles.css */
+
+/* Reinicio básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* El contenedor de partículas ocupa toda la ventana */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para que quede detrás del contenido */
+    background: linear-gradient(135deg, #b3b4a3, #b3b4a3); /* Fondo degradado */
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* Contenedor principal para el contenido */
+.container {
+    position: relative;  /* Para superponerlo encima de #particles-js */
+    max-width: 600px;
+    margin: 80px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5c2d91;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100px;
+}
+
+/* Barra de navegación */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background: #5c2d91;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.nav a:hover {
+    background: #4a2172;
+}
+
+/* Botones y campos de formulario */
+button, input[type="submit"] {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background: #5c2d91;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #4a2172;
+}
+
+/* Formularios en general */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Tablas para admin.php */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.edit-form {
+    display: none;
+    margin-top: 10px;
+}
+.edit-form.active {
+    display: table-row;
+}
