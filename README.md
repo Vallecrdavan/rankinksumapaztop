@@ -22,4 +22,4 @@ Sistema de evaluación y ranking para cafés de la región de Sumapaz, Colombia.
 3. Acceder a través de un servidor web (como XAMPP)
 
 ## Contacto
-[Tu información de contacto]
+[valleamcd@gmail.com]
