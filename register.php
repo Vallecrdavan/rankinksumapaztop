@@ -300,7 +300,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="form-group">
                 <label for="rol"><i class="fas fa-user-tag"></i> Rol:</label>
                 <select name="rol" id="rol">
-                    <option value="usuario">Califiacador</option>
+                    <option value="usuario">Calificador</option>
                     <option value="admin">Administrador</option>
                 </select>
             </div>
